@@ -1,24 +1,25 @@
 (ns clojureweb.core
   (:use compojure.core)
   (:require
+    [compojure.route :as route]
     [ring.adapter.jetty :as jetty]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World 2!"))
+;(defn foo
+;  "I don't do a whole lot."
+;  [x]
+;  (println x "Hello, World 2!"))
 
-(defn mean
-([values](mean (rest values) (first values)))
-([values result]
-  (if (empty? values)
-    (reverse result)
-    (mean (rest values) (+ result (first values)))
-  )))
+;(defn mean
+;([values](mean (rest values) (first values)))
+;([values result]
+;  (if (empty? values)
+;    (reverse result)
+;    (mean (rest values) (+ result (first values)))
+;  )))
 
-(defn test2
-  ([] (println "primera condicio"))
-  ([x] (println "segona condicio")))
+;(defn test2
+;  ([] (println "primera condicio"))
+;  ([x] (println "segona condicio")))
 
 (defroutes main-routes
   (GET "/" [] "Hello World 2")
