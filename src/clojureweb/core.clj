@@ -29,6 +29,9 @@
 ;  ([] (println "primera condicio"))
 ;  ([x] (println "segona condicio")))
 
+(defn authenticated? [name pass]
+  (= [name pass] [(System/getenv "AUTH_USER") (System/getenv "AUTH_PASS")]))
+
 (def drawbridge-handler
   (-> (cemerick.drawbridge/ring-handler)
     (keyword-params/wrap-keyword-params)
@@ -38,14 +41,13 @@
 
 (defn wrap-drawbridge [handler]
   (fn [req]
-    (if (= "/repl" (:uri req))
-      (drawbridge-handler req)
+    (let [handler (if (= "/repl" (:uri req))
+                    (basic/wrap-basic-authentication
+                      drawbridge-handler authenticated?)
+                    handler)]
       (handler req))))
 
-
 (defroutes main-routes
-  (let [nrepl-handler (cemerick.drawbridge/ring-handler)]
-    (ANY "/repl" request (nrepl-handler request)))
   (GET "/" [] "Hello World 2")
   (GET "/test" [] "test")
   (GET "/test2" [] "this is another test")
