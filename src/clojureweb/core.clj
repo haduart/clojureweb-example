@@ -24,6 +24,7 @@
 (defroutes main-routes
   (GET "/" [] "Hello World 2")
   (GET "/test" [] "test")
+  (GET "/test2" [] "this is another test")
   )
 
 ;(defn -main []
