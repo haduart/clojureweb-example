@@ -7,8 +7,12 @@
     [c3p0/c3p0 "0.9.1.2"]
     [org.clojure/java.jdbc "0.2.3"]
     [com.h2database/h2 "1.3.168"]
-[cheshire "4.0.3"]]:plugins [[lein-ring "0.8.8"]]
+    [cheshire "4.0.3"]]:plugins [[lein-ring "0.8.8"]]
+:min-lein-version  "2.0.0"
+:source-paths      ["src/clojure"]
+:java-source-paths ["src/java"]
+:javac-options     ["-target" "1.6" "-source" "1.6"]
 :ring {:handler clojureweb.handler/app}
 :profiles
-{:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
+    {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
         [ring-mock "0.1.5"]]}})
