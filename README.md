@@ -6,7 +6,7 @@ http://fierce-shore-6716.herokuapp.com/
 
 ## Usage
 
-lein run
+lein ring server
 
 ## License
 
