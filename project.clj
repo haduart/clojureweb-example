@@ -10,12 +10,7 @@
                  [clj-http "0.7.8"]
                  [org.clojure/data.json "0.2.4"]
                  [ring/ring-jetty-adapter "1.1.6"]
-                 [clj-http "0.7.8"]
-                 [peridot "0.2.2"]
-
-                 [c3p0/c3p0 "0.9.1.2"]
-                 [org.clojure/java.jdbc "0.2.3"]
-                 [com.h2database/h2 "1.3.168"]]
+                 [clj-http "0.7.8"]]
   :plugins [[lein-ring "0.8.10"] [lein-junit "1.1.2"]
             [lein-midje "3.0.0"]]
   :min-lein-version "2.0.0"

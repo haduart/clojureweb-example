@@ -3,7 +3,6 @@
         midje.sweet)
   (:require [clojureweb.handler :as handler]
             [ring.mock.request :as request]
-            [peridot.core :as peridot]
             [clojure.data.json :as json]))
 
 
