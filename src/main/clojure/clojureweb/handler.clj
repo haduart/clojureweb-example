@@ -1,8 +1,7 @@
 (ns clojureweb.handler
   (:import [clojureweb Foo])
   (:use compojure.core)
-  (:require [clojureweb.dao :as dao]
-            [compojure.handler :as handler]
+  (:require [compojure.handler :as handler]
             [compojure.route :as route]
             [cheshire.core :refer :all ]
             [cheshire.generate :refer [add-encoder encode-str remove-encoder]]
@@ -56,6 +55,6 @@
   (handler/site (execute-routing)))
 
 (defn -main [& [port]]
-  (let [port (Integer. (or port 5000))]
+  (let [port (Integer. (or port (System/getenv "PORT")))]
     (jetty/run-jetty (execute-routing)
       {:port port :join? false})))
