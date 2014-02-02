@@ -1,18 +1,34 @@
 (defproject clojureweb "0.1.0-SNAPSHOT"
-:description "This is an example of how to creat a Web application with Clojure"
-:url "http://example.com/FIXME"
-:dependencies [[org.clojure/clojure "1.4.0"]
-    [compojure "1.1.1"]
-    [ring/ring-json "0.1.2"]
-    [c3p0/c3p0 "0.9.1.2"]
-    [org.clojure/java.jdbc "0.2.3"]
-    [com.h2database/h2 "1.3.168"]
-    [cheshire "4.0.3"]]:plugins [[lein-ring "0.8.8"]]
-:min-lein-version  "2.0.0"
-:source-paths      ["src/clojure"]
-:java-source-paths ["src/java"]
-:javac-options     ["-target" "1.6" "-source" "1.6"]
-:ring {:handler clojureweb.handler/app}
-:profiles
-    {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
-        [ring-mock "0.1.5"]]}})
+  :description "This is an example of how to creat a Web application with Clojure"
+  :url "http://example.com/FIXME"
+  :dependencies [[org.clojure/clojure "1.5.1"]
+                 [compojure "1.1.6"]
+                 [cheshire "5.3.1"]
+                 [com.cemerick/drawbridge "0.0.6"]
+                 [ring-basic-authentication "1.0.1"]
+                 [org.clojure/tools.trace "0.7.6"]
+                 [clj-http "0.7.8"]
+                 [org.clojure/data.json "0.2.4"]
+                 [ring/ring-jetty-adapter "1.1.6"]
+                 [clj-http "0.7.8"]
+
+                 [c3p0/c3p0 "0.9.1.2"]
+                 [org.clojure/java.jdbc "0.2.3"]
+                 [com.h2database/h2 "1.3.168"]]
+  :plugins [[lein-ring "0.8.10"] [lein-junit "1.1.2"]
+            [lein-midje "3.0.0"]]
+  :min-lein-version "2.0.0"
+  :plugins [[lein-ring "0.8.10"] [lein-junit "1.1.2"]
+            [lein-midje "3.0.0"]]
+  :min-lein-version "2.0.0"
+  :source-paths ["src/main/clojure"]
+  :java-source-paths ["src/main/java" "test/main/java"]
+  :javac-options ["-target" "1.7" "-source" "1.7"]
+  :test-paths ["test/main/clojure"]
+  :junit ["test/main/java"]
+  :ring {:handler clojureweb.handler/app}
+  :main clojureweb.handler
+  :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
+                                  [ring-mock "0.1.5"] [midje "1.6.0"]
+                                  [junit/junit "4.11"]
+                                  [peridot "0.2.2"]]}})
