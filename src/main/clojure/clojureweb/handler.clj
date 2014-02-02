@@ -55,6 +55,6 @@
   (handler/site (execute-routing)))
 
 (defn -main [& [port]]
-  (let [port (Integer. (or port 5000))]
+  (let [port (Integer. (or port (System/getenv "PORT")))]
     (jetty/run-jetty (execute-routing)
       {:port port :join? false})))

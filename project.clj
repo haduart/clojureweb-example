@@ -14,9 +14,6 @@
   :plugins [[lein-ring "0.8.10"] [lein-junit "1.1.2"]
             [lein-midje "3.0.0"]]
   :min-lein-version "2.0.0"
-  :plugins [[lein-ring "0.8.10"] [lein-junit "1.1.2"]
-            [lein-midje "3.0.0"]]
-  :min-lein-version "2.0.0"
   :source-paths ["src/main/clojure"]
   :java-source-paths ["src/main/java" "test/main/java"]
   :javac-options ["-target" "1.7" "-source" "1.7"]
