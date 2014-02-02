@@ -11,6 +11,7 @@
                  [org.clojure/data.json "0.2.4"]
                  [ring/ring-jetty-adapter "1.1.6"]
                  [clj-http "0.7.8"]
+                 [peridot "0.2.2"]
 
                  [c3p0/c3p0 "0.9.1.2"]
                  [org.clojure/java.jdbc "0.2.3"]
@@ -29,6 +30,7 @@
   :ring {:handler clojureweb.handler/app}
   :main clojureweb.handler
   :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
-                                  [ring-mock "0.1.5"] [midje "1.6.0"]
-                                  [junit/junit "4.11"]
-                                  [peridot "0.2.2"]]}})
+                                  [ring-mock "0.1.5"]
+                                  [midje "1.6.0"]
+                                  [junit/junit "4.11"]]}
+             :production {:dependencies [[javax.servlet/servlet-api "2.5"]] }})
