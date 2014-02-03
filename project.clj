@@ -7,7 +7,6 @@
                  [org.clojure/tools.nrepl "0.2.3"]
                  [com.cemerick/drawbridge "0.0.6" :exclusions [org.clojure/tools.nrepl]]
                  [ring-basic-authentication "1.0.1"]
-                 [org.clojure/tools.trace "0.7.6"]
                  [clj-http "0.7.8"]
                  [org.clojure/data.json "0.2.4"]
                  [ring/ring-jetty-adapter "1.1.6"]

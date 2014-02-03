@@ -11,8 +11,5 @@
     "The status should be 200"
     (:status @response) => 200
     "Checking that the body is correct"
-    (:body @response) => "{\"response\":\"response\"}"
-    ))
+    (:body @response) => "{\"response\":\"response\"}"))
 
-;(provided
-;  (historian/get-tag-names "BA") => [{"name" "tag1"} {"name" "tag2"}])
