@@ -35,8 +35,6 @@
    :body (json/write-str data)
    })
 
-
-; The defroutes macro transforms into => (def app-routes (routes (POST ...
 (defroutes app-routes
   (GET "/api/test/" [] (json-response {:response "response"}))
   (route/resources "/")
