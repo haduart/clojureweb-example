@@ -39,7 +39,7 @@
 <html manifest=\"clojureweb.manifest\">
 <head>
     <title>ClojureWeb</title>
-    <script src=\"scripts/main.js\?v=1.0\"></script>
+    <script src=\"scripts/main.js\"></script>
 </head>
 <body>
 <!--<p>The time is: <span id=\"clock\"></span></p>-->

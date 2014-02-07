@@ -71,10 +71,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="handler.clj" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="handler.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/clojure/clojureweb/handler.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="46" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.0">
+            <state line="43" column="38" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.26136363">
               <folding />
             </state>
           </provider>
@@ -98,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/public/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="36" selection-start="318" selection-end="318" vertical-scroll-proportion="0.20920502">
+            <state line="37" column="38" selection-start="1189" selection-end="1189" vertical-scroll-proportion="-21.346153">
               <folding />
             </state>
           </provider>
@@ -121,9 +121,9 @@
         <option value="$PROJECT_DIR$/src/clojureweb/core.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/resources/public/web.manifest" />
-        <option value="$PROJECT_DIR$/src/main/clojure/clojureweb/handler.clj" />
         <option value="$PROJECT_DIR$/resources/public/index.html" />
         <option value="$PROJECT_DIR$/resources/public/scripts/main.js" />
+        <option value="$PROJECT_DIR$/src/main/clojure/clojureweb/handler.clj" />
       </list>
     </option>
   </component>
@@ -642,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/clojure/clojureweb/handler.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="46" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/public/web.manifest">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="27" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
@@ -665,7 +658,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/public/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="36" selection-start="318" selection-end="318" vertical-scroll-proportion="0.20920502">
+        <state line="37" column="38" selection-start="1189" selection-end="1189" vertical-scroll-proportion="-21.346153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/clojure/clojureweb/handler.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="38" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.26136363">
           <folding />
         </state>
       </provider>
