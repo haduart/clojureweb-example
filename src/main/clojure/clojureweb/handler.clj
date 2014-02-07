@@ -35,8 +35,32 @@
    :body (json/write-str data)
    })
 
+(def test-web "<!DOCTYPE HTML>
+<html manifest=\"clojureweb.manifest\">
+<head>
+    <title>ClojureWeb</title>
+    <script src=\"scripts/main.js\?v=1.0\"></script>
+</head>
+<body>
+<!--<p>The time is: <span id=\"clock\"></span></p>-->
+<h1>Testing Offline Mode</h1>
+<p>window.applicationCache.status is <span id=\"status\"></span></p>
+<input type=\"button\" value=\"Capacity Chart\" onclick=\"changeImage();\">
+<p><img id=\"alphabet\" src=\"http://b.wearehugh.com/dih5/aoc-a.png\" alt=\"[alphabet]\"></p>
+</body>
+</html>")
+
+(def test-2-web "<html><body><h1>This is SPARTA!!!</h1></body></html>")
+
+(defn test-custom-handler [request]
+  {:status 200
+   :headers {"Content-Type" "text/html"
+             "Cache-Control" "no-cache, no-store" }
+   :body (str test-web)})
+
 (defroutes app-routes
   (GET "/api/test/" [] (json-response {:response "response"}))
+  (GET "/test2" [] test-custom-handler)
   (route/resources "/")
   (route/not-found (resp/resource-response "404.html" {:root "public"})))
 

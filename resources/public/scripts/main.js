@@ -31,7 +31,7 @@ window.setInterval(function () {
     document.getElementById('status').innerHTML = status + " [" + status_message(status) + "]";
     changeImage();
 
-}, 100000);
+}, 1000);
 
 window.applicationCache.addEventListener("updateready", function() {
     window.applicationCache.swapCache();
