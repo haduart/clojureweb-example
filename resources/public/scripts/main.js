@@ -29,7 +29,6 @@ function changeImage() {
 window.setInterval(function () {
     var status = window.applicationCache.status;
     document.getElementById('status').innerHTML = status + " [" + status_message(status) + "]";
-    changeImage();
 
 }, 1000);
 
