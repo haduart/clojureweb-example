@@ -35,8 +35,17 @@
    :body (json/write-str data)
    })
 
+(def test-2-web "<html><body><h1>This is SPARTA!!!</h1></body></html>")
+
+(defn test-custom-handler [request]
+  {:status 200
+   :headers {"Content-Type" "text/html"
+             "Cache-Control" "no-cache, no-store" }
+   :body (str test-2-web)})
+
 (defroutes app-routes
   (GET "/api/test/" [] (json-response {:response "response"}))
+  (GET "/test2" [] test-custom-handler)
   (route/resources "/")
   (route/not-found (resp/resource-response "404.html" {:root "public"})))
 
