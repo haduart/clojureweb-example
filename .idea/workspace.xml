@@ -8,7 +8,7 @@
     <file path="/Clojure REPL" changelist="a8fa23b4-389b-4408-a021-063d4c69239e" time="1386013496071" ignored="false" />
     <file path="/project.clj" changelist="a8fa23b4-389b-4408-a021-063d4c69239e" time="1384343548044" ignored="false" />
     <file path="/Dummy.txt" changelist="a8fa23b4-389b-4408-a021-063d4c69239e" time="1391783469394" ignored="false" />
-    <file path="/README.md" changelist="a8fa23b4-389b-4408-a021-063d4c69239e" time="1386531506376" ignored="false" />
+    <file path="/README.md" changelist="a8fa23b4-389b-4408-a021-063d4c69239e" time="1391937314288" ignored="false" />
     <file path="/index.html" changelist="a8fa23b4-389b-4408-a021-063d4c69239e" time="1391783852388" ignored="false" />
     <file path="/web.manifest" changelist="a8fa23b4-389b-4408-a021-063d4c69239e" time="1391787431392" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,6 +25,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -61,7 +62,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -71,10 +71,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="handler.clj" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="handler.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/clojure/clojureweb/handler.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="22" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.5099432">
+            <state line="47" column="14" selection-start="1555" selection-end="1560" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,7 +83,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="28" selection-start="344" selection-end="344" vertical-scroll-proportion="-7.5">
+            <state line="12" column="28" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/public/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="126" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0">
+            <state line="27" column="126" selection-start="859" selection-end="859" vertical-scroll-proportion="0.56485355">
               <folding />
             </state>
           </provider>
@@ -117,13 +117,13 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/clojureweb/core.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/resources/public/web.manifest" />
         <option value="$PROJECT_DIR$/resources/public/scripts/main.js" />
         <option value="$PROJECT_DIR$/resources/public/index.html" />
         <option value="$PROJECT_DIR$/src/main/clojure/clojureweb/handler.clj" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -169,7 +169,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,6 +201,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clojure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -223,10 +230,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojureweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -243,6 +246,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clojure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -293,6 +300,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,6 +311,7 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="MavenSettings" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my-web-site" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -491,7 +500,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1325" height="878" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -512,7 +521,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21769772" sideWeight="0.64174455" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22709475" sideWeight="0.64174455" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35825545" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -588,6 +597,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/clojure/clojureweb/handler.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="28" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/web.manifest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="126" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -618,11 +655,6 @@
         <state line="7" column="65" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="44" selection-start="282" selection-end="282" vertical-scroll-proportion="0.24958402" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="18" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.51369864" />
@@ -630,7 +662,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="344" selection-end="344" vertical-scroll-proportion="-7.5">
+        <state line="12" column="28" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -644,16 +676,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/public/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="126" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0">
+        <state line="27" column="126" selection-start="859" selection-end="859" vertical-scroll-proportion="0.56485355">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/clojure/clojureweb/handler.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="22" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.5099432">
+        <state line="47" column="14" selection-start="1555" selection-end="1560" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="55" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.7112971" />
       </provider>
     </entry>
   </component>
@@ -673,7 +710,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Clojure</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -709,11 +746,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Clojure|clojureweb</last-edited>
+          <last-edited>clojureweb</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

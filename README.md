@@ -1,4 +1,4 @@
-# ClojureWeb Example
+# Clojure WebApp Template
 
 In this project you can find an easy basic template that you can use for starting your own projects or learning how to start them.
 
@@ -6,7 +6,9 @@ In this project you can find an easy basic template that you can use for startin
 `lein run -m clojureweb.handler 5000`
 
 Or maybe it's deployed in a heroku server:
+http://fierce-shore-6716.herokuapp.com
 http://fierce-shore-6716.herokuapp.com/api/test/
+http://fierce-shore-6716.herokuapp.com/test2
 
 
 What can you find in this project?
